@@ -37,7 +37,7 @@ function App() {
       <div className="main-container flex md:flex md:justify-around p-3 gap-24 md:gap-4 bg-cyan-50">
         <div className="left-container md:w-[70%]  p-2 rounded-xl">
           
-          <Suspense>
+          <Suspense fallback={<h2>Blogs are loading</h2>}>
           <Blogs blogsPromise={blogsPromise}
           handleBookMarked={handleBookMarked}
           handleMarkAsRead={handleMarkAsRead}
